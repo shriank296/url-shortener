@@ -1,0 +1,9 @@
+version: "3"
+services:
+  api:
+    build: .
+    image: url_shortener
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/url_shortener:ro  
